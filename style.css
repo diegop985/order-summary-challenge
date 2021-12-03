@@ -17,6 +17,7 @@
   --neutral-pale-blue: hsl(225, 100%, 98%);
   --neutral-desaturated-blue: hsl(224, 23%, 55%);
   --neutral-dark-blue: hsl(223, 47%, 23%);
+  --hovered-lila: #766cf1;
 }
 /* __________________________________ */
 
@@ -101,8 +102,7 @@ p {
 .ctaButton {
   border: none;
   text-decoration: none;
-  padding: 10px 50px;
-  font-weight: 700;
+  font-weight: 900;
   font-family: "Red Hat Display", sans-serif;
   border-radius: 8px;
 }
@@ -110,13 +110,59 @@ p {
 .ctaP {
   background-color: var(--main-bright-blue);
   color: white;
+  padding: 10px 50px;
   margin: 30px auto 10px;
   display: block;
+  box-shadow: 0px 5px 30px rgba(6, 8, 131, 0.5);
+  cursor: pointer;
 }
 
 .ctaC {
-  background-color: white;
+  background-color: transparent;
   color: var(--neutral-desaturated-blue);
   margin: 0 auto;
   display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.ctaP:hover {
+  background-color: var(--hovered-lila);
+  color: white;
+}
+
+a:hover {
+  color: var(--hovered-lila);
+  text-decoration: none;
+}
+
+.ctaC:hover {
+  color: black;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -325px;
+    margin-left: -175px;
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  .plan-card {
+    width: 270px;
+  }
+  .hero {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .attribution {
+    margin: 30px auto 10px;
+    display: block;
+  }
 }
