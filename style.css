@@ -65,6 +65,7 @@ p {
   width: 370px;
   height: 90px;
   margin: auto;
+  margin-top: 25px;
 }
 .plan-card a {
   margin-right: 25px;
@@ -95,4 +96,27 @@ p {
 .p1 {
   font-weight: 700;
   color: black;
+}
+
+.ctaButton {
+  border: none;
+  text-decoration: none;
+  padding: 10px 50px;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  border-radius: 8px;
+}
+
+.ctaP {
+  background-color: var(--main-bright-blue);
+  color: white;
+  margin: 30px auto 10px;
+  display: block;
+}
+
+.ctaC {
+  background-color: white;
+  color: var(--neutral-desaturated-blue);
+  margin: 0 auto;
+  display: block;
 }
